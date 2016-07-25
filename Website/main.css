@@ -1,101 +1,26 @@
 
-html, body {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  font-weight: 300;
-  line-height: 1.5;
-  color: #FFF;
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #323232;
-  background-position: center top;
-  background-size: cover;
-  margin: 0;
-}
-
-.page-title {
-  text-align: center;
-  font-weight: 100;
-}
-
-.page-description {
-  border: 1px solid #000;
-  text-align: center;
-    padding: 30px;
-  background-image: linear-gradient(0deg, #1E1E1E 0%, #323232 15%, #323232 85%, #1E1E1E 100%);
-}
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px
-
-}
-
-.gallery-item {
-  cursor: pointer;
-  margin: 10px;
-  border: 1px solid #000;
-}
-
-.gallery-item .thumbnail {
-
-}
-
-/* FOOTER NAVIGATION */
-
-nav {
-  background-image: linear-gradient(0deg, #222222 0%, #181818 100%);
-}
-
-nav li {
-  margin: 0;
-  padding: 0 10px;
-  display: inline;
-  margin-right: 30px;
-  padding: 8px 18px;
-  border: 1px solid #645757;
-}
-
-nav ul {
-  display: inline;
-}
-
-.contact-btn {
-  float:right
-}
-
-.contact-btn a {
-  cursor: pointer;
-  margin-right: 30px;
-  padding: 8px 18px;
-  border: 1px solid #FFF;
+/* ### Footer ### */
+html {
   position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  max-width: 1170;
+
+  background-image: linear-gradient(180deg, #333332 0%, #1E1E1E 30%, #1E1E1E 100%);
 }
 
-.contact-btn a:active {
-  bottom: 2px;
+.jumbotron {
+  max-width: 1170;
 }
 
-nav a {
-  height: 60px;
-  line-height: 60px;
-  color: #FFF;
-  text-decoration: none;
-}
-
-footer {
+.footer {
   position: absolute;
-  left: 0;
   bottom: 0;
-  height: 100px;
   width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
   background-image:  linear-gradient(180deg, #333332 0%, #1E1E1E 30%, #1E1E1E 100%);
-  font-size:1.5em;
-  text-align: center;
-  line-height:100px;
 }
